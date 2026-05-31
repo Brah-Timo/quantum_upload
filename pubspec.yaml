@@ -1,0 +1,35 @@
+name: quantum_upload
+description: >-
+  A pure Dart package for reliable chunked file uploads with automatic resume, persistent session tracking, integrity verification, and seamless recovery from network interruptions.
+
+version: 1.0.0
+homepage: https://github.com/Brah-Timo/quantum_upload
+repository: https://github.com/Brah-Timo/quantum_upload
+issue_tracker: https://github.com/Brah-Timo/quantum_upload/issues
+documentation: https://pub.dev/documentation/quantum_upload/latest/
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  http: ^1.2.0                 # HTTP multipart requests
+  crypto: ^3.0.3               # MD5 / SHA-256 chunk checksums
+  path: ^1.9.0                 # Cross-platform file-path helpers
+  shared_preferences: ^2.2.2   # Persistent local session storage
+  uuid: ^4.3.3                 # RFC-4122 session-ID generation
+
+dev_dependencies:
+  test: ^1.24.0                # Dart testing framework
+  mockito: ^5.4.4              # Mock objects for unit tests
+  build_runner: ^2.4.8         # Code generation for Mockito
+  lints: ^3.0.0                # Official Dart lint rules
+  coverage: ^1.7.2             # Test-coverage reporting
+
+topics:
+  - upload
+  - file
+  - chunked
+  - resumable
+  - network
+
+
